@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background: #862323;
+  background: #351212;
   color: #2e0f0f;
   font-family: monospace;
   display: flex;
@@ -22,28 +22,54 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  color:aqua;
+  color:rgb(255, 255, 255);
 }
 
 .subtitle {
   font-size: 0.9rem;
   opacity: 0.6;
   margin-bottom: 40px;
-  color:aqua;
+  color:rgb(255, 255, 255);
 }
 
 #timer {
   font-size: 3rem;
   letter-spacing: 3px;
-  color:aqua;
+  color:rgb(255, 255, 255);
 }
 
 #message {
   margin-top: 40px;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   line-height: 1.8;
-  opacity: 0.85;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 22px 32px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 10px 35px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
 }
+
+#message:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 14px 45px rgba(0, 0, 0, 0.45);
+}
+
+#message:active {
+  transform: translateY(0);
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.35),
+    0 6px 20px rgba(0, 0, 0, 0.35);
+}
+  
 
 .hidden {
   display: none;
